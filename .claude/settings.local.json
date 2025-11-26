@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /b \"c:\\Users\\Usuario\\Documents\\Pagina Marijo\\pagina\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grupo de Entrenamiento en Habilidades DBT - Aprende a vivir con calma.">
+    <title>Equilibria DBT - Grupo de Habilidades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Fraunces:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="wave-container">
+            <svg class="wave" viewBox="0 0 1200 150" preserveAspectRatio="none">
+                <path d="M0,75 Q300,50 600,75 T1200,75 L1200,150 L0,150 Z" fill="rgba(125, 211, 192, 0.04)" style="animation: waveParallax1 45s ease-in-out infinite;"/>
+                <path d="M0,90 Q300,65 600,90 T1200,90 L1200,150 L0,150 Z" fill="rgba(251, 191, 36, 0.03)" style="animation: waveParallax2 50s ease-in-out infinite reverse;"/>
+            </svg>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-label fade-in-up delay-1">Un espacio para ti</span>
+                <h1 class="hero-title fade-in-up delay-2">
+                    Aprende a vivir con <span class="accent">calma</span>
+                </h1>
+                <p class="hero-text fade-in-up delay-3">
+                    Si tus emociones te desbordan o las relaciones son difíciles, aquí encontrarás estructura, herramientas reales y acompañamiento profesional.
+                </p>
+                <button class="hero-cta fade-in-up delay-4 open-modal">
+                    Agenda llamada
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <svg class="wave-svg" viewBox="0 0 1200 400" preserveAspectRatio="none">
+                <path class="wave-path" d="M0,200 Q300,100 600,200 T1200,200 L1200,400 L0,400 Z"/>
+                <path class="wave-path wave-inverted" d="M0,240 Q300,320 600,240 T1200,240 L1200,400 L0,400 Z"/>
+                <path class="wave-path" d="M0,280 Q300,200 600,280 T1200,280 L1200,400 L0,400 Z"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Modal de Contacto -->
+    <div id="contactModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="form-card">
+                <h2 class="form-title">Da el primer paso</h2>
+                <p class="form-subtitle">Conecta con nosotros en una breve videollamada</p>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" id="nombre" class="form-input" placeholder="¿Cómo te llamas?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dificultad" class="form-label">¿Con qué te identificas?</label>
+                        <select id="dificultad" class="form-select" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="emociones">Emociones intensas</option>
+                            <option value="relaciones">Dificultades en relaciones</option>
+                            <option value="impulsividad">Impulsividad</option>
+                            <option value="ansiedad">Ansiedad constante</option>
+                            <option value="frustracion">Baja tolerancia a la frustración</option>
+                            <option value="otro">Otra situación</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Hablar por WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUÉ ES DBT - Layout centrado simple -->
+    <section class="section-centered">
+        <div class="container">
+            <div class="content-box">
+                <div class="section-label">ENTRENAMIENTO</div>
+                <h2 class="section-title">¿Qué es DBT?</h2>
+                <p class="lead-text">Terapia Dialéctico Conductual</p>
+                <p class="body-text">Un programa estructurado que te enseña habilidades concretas para manejar emociones, mejorar relaciones y vivir con mayor estabilidad.</p>
+                <p class="body-text">No es solo hablar. Es aprender a hacer algo diferente con lo que sientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIALÉCTICA - Layout editorial sin cards -->
+    <section class="section-dialectic">
+        <div class="container">
+            <div class="dialectic-content">
+                <h2 class="dialectic-title">La dialéctica</h2>
+                <p class="dialectic-subtitle">Dos verdades opuestas pueden coexistir</p>
+
+                <div class="dialectic-grid-new">
+                    <div class="dialectic-item" data-symbol="⚖️">
+                        <p>Puedes <strong>aceptarte</strong> como eres y al mismo tiempo <strong>querer cambiar</strong>.</p>
+                    </div>
+                    <div class="dialectic-item" data-symbol="🌓">
+                        <p>Puedes sentir <strong>tristeza</strong> y aun así <strong>actuar con propósito</strong>.</p>
+                    </div>
+                    <div class="dialectic-item" data-symbol="🤲">
+                        <p>Puedes <strong>validar</strong> tus emociones y también <strong>regularlas</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POR QUÉ LLEGAN - Layout asimétrico sticky -->
+    <section class="section-why">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-intro">
+                    <div class="section-label">CONTEXTO</div>
+                    <h2>¿Por qué llegan aquí?</h2>
+                    <p class="lead-text">Muchas personas intentaron otras terapias sin avanzar.</p>
+                </div>
+                <div>
+                    <ul class="why-list">
+                        <li>
+                            <strong>Calmar</strong>
+                            Tu cuerpo cuando la emoción abruma.
+                        </li>
+                        <li>
+                            <strong>Pedir</strong>
+                            Sin dañar la relación.
+                        </li>
+                        <li>
+                            <strong>Sobrevivir</strong>
+                            La crisis sin empeorar.
+                        </li>
+                        <li>
+                            <strong>Estar presente</strong>
+                            Sin quedar atrapado en tu mente.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CICLICIDAD - Layout editorial con números -->
+    <section class="section-cycle">
+        <div class="container">
+            <div class="cycle-content-new">
+                <div class="section-label">FORMATO</div>
+                <h2 class="cycle-title">Grupo cíclico y abierto</h2>
+                <p class="body-text">Puedes integrarte al inicio de cualquier módulo. El entrenamiento es continuo.</p>
+
+                <div class="cycle-list">
+                    <div class="cycle-list-item" data-number="24">
+                        <strong>Semanas</strong>
+                        <p>De entrenamiento intensivo</p>
+                    </div>
+                    <div class="cycle-list-item" data-number="4">
+                        <strong>Módulos</strong>
+                        <p>Que se rotan cíclicamente</p>
+                    </div>
+                    <div class="cycle-list-item" data-number="1">
+                        <strong>Sesión semanal</strong>
+                        <p>Grupal psicoeducativa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MÓDULOS - Grid horizontal -->
+    <section class="section-modules">
+        <div class="container">
+            <div class="modules-header">
+                <div class="section-label">PROGRAMA</div>
+                <h2 class="section-title">4 módulos esenciales</h2>
+            </div>
+
+            <div class="modules-grid">
+                <div class="module-card" data-number="01">
+                    <div class="module-header-row">
+                        <div class="module-icon-large">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="module-title-large">Mindfulness</h3>
+                    </div>
+                    <div class="module-duration">2 semanas</div>
+                    <p class="module-desc">Estar presente, sin juzgar.</p>
+                    <p class="module-example">Notar la ansiedad sin reaccionar. Observar la respiración cuando vas a explotar.</p>
+                </div>
+
+                <div class="module-card" data-number="02">
+                    <div class="module-header-row">
+                        <div class="module-icon-large">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="module-title-large">Efectividad Interpersonal</h3>
+                    </div>
+                    <div class="module-duration">6 semanas</div>
+                    <p class="module-desc">Pedir, poner límites, mantener relaciones sanas.</p>
+                    <p class="module-example">Decir no sin culpa. Resolver conflictos sin explotar.</p>
+                </div>
+
+                <div class="module-card" data-number="03">
+                    <div class="module-header-row">
+                        <div class="module-icon-large">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </div>
+                        <h3 class="module-title-large">Regulación Emocional</h3>
+                    </div>
+                    <div class="module-duration">6 semanas</div>
+                    <p class="module-desc">Comprender y cambiar emociones sin reprimirlas.</p>
+                    <p class="module-example">Reducir la tristeza antes de que paralice. Aumentar emociones positivas.</p>
+                </div>
+
+                <div class="module-card" data-number="04">
+                    <div class="module-header-row">
+                        <div class="module-icon-large">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                            </svg>
+                        </div>
+                        <h3 class="module-title-large">Tolerancia al Malestar</h3>
+                    </div>
+                    <div class="module-duration">6 semanas</div>
+                    <p class="module-desc">Sobrevivir crisis sin empeorar.</p>
+                    <p class="module-example">Atravesar pérdidas sin conductas destructivas. Tolerar incertidumbre.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPO - Layout editorial -->
+    <section class="section-team">
+        <div class="container">
+            <div class="team-header">
+                <div class="section-label">EQUIPO</div>
+                <h2 class="section-title">Quiénes te acompañan</h2>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-avatar">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="team-name">Psic. María José</h3>
+                    <p class="team-quote">"Estructura y empatía para el cambio"</p>
+                    <p class="team-bio">Coordinadora del grupo. Especializada en DBT y procesos emocionales complejos.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-avatar">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="team-name">Psic. [Nombre]</h3>
+                    <p class="team-quote">"[Frase personal]"</p>
+                    <p class="team-bio">Enfoque en regulación emocional y habilidades para la vida.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-avatar">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="team-name">Psic. [Nombre]</h3>
+                    <p class="team-quote">"[Frase personal]"</p>
+                    <p class="team-bio">Especialista en intervención grupal desde la validación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-faq">
+        <div class="container">
+            <div class="faq-header">
+                <div class="section-label">PREGUNTAS FRECUENTES</div>
+                <h2 class="section-title">Todo lo que necesitas saber</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué es DBT y cómo puede ayudarme?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>DBT (Dialectical Behavior Therapy) es un programa estructurado que te enseña más de 30 habilidades concretas para manejar mejor tus emociones, relacionarte de forma más efectiva, vivir con mayor conciencia del presente y tolerar situaciones difíciles sin empeorarlas.</p>
+                        <p>Fue desarrollado originalmente para personas con desregulación emocional severa, pero hoy se utiliza ampliamente para mejorar el manejo emocional y la calidad de vida en general.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cuánto dura el entrenamiento?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El programa completo dura aproximadamente 24 semanas (5-6 meses), organizados en ciclos que incluyen:</p>
+                        <ul>
+                            <li>2 semanas de Mindfulness</li>
+                            <li>6 semanas de Efectividad Interpersonal</li>
+                            <li>2 semanas de Mindfulness</li>
+                            <li>6 semanas de Regulación Emocional</li>
+                            <li>2 semanas de Mindfulness</li>
+                            <li>6 semanas de Tolerancia al Malestar</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Puedo integrarme en cualquier momento?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí. El grupo es cíclico y abierto, lo que significa que puedes integrarte al inicio de cualquier módulo. El entrenamiento es continuo y siempre existe.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿A quién está dirigido este entrenamiento?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Este entrenamiento está dirigido a personas que:</p>
+                        <ul>
+                            <li>Estén en terapia individual activa</li>
+                            <li>Tengan dificultades para manejar emociones</li>
+                            <li>Experimenten problemas en sus relaciones</li>
+                            <li>Deseen aprender herramientas prácticas para regularse, tomar decisiones más conscientes y vivir con mayor estabilidad</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Necesito tener un diagnóstico clínico?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No necesariamente. Aunque DBT fue creado originalmente para personas con Trastorno Límite de la Personalidad, hoy se utiliza ampliamente con personas que desean mejorar su manejo emocional, relaciones interpersonales y calidad de vida, aun sin tener un diagnóstico clínico.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cómo es el formato de las sesiones?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Las sesiones son grupales y de carácter psicoeducativo. Se realiza una sesión semanal donde se enseñan las habilidades de forma estructurada, con ejemplos prácticos y ejercicios para aplicar en la vida diaria.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="cta-final">
+                <h2 class="cta-final-title">Tu primera llamada</h2>
+                <p class="cta-final-text">Conocernos, resolver dudas y validar si el grupo es adecuado para ti. Sin presión.</p>
+                <button class="btn-secondary open-modal">Agenda tu videollamada</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Equilibria DBT</p>
+            <p><a href="tel:+523311960715" class="footer-link">33 1196 0715</a></p>
+        </div>
+    </footer>
+
+    <!-- Sticky Nav -->
+    <nav class="sticky-nav" id="stickyNav">
+        <div class="sticky-nav-content">
+            <div class="sticky-nav-logo-wrapper">
+                <div class="sticky-nav-accent"></div>
+                <div>
+                    <div class="sticky-nav-logo">EQUILIBRIA</div>
+                    <div class="sticky-nav-subtitle">Grupo de Habilidades D.B.T.</div>
+                </div>
+                <div class="sticky-nav-accent"></div>
+            </div>
+            <button class="sticky-nav-cta open-modal">Contáctanos</button>
+        </div>
+    </nav>
+
+    <!-- FAB WhatsApp -->
+    <a href="https://wa.me/523311960715?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20el%20Grupo%20de%20Habilidades%20DBT." class="fab-whatsapp" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
