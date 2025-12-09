@@ -20,7 +20,17 @@
         </div>
     </div>
 
-    <section class="hero">
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav">
+        <div class="sticky-nav-content">
+            <a href="#hero" class="sticky-nav-logo-wrapper">
+                <img src="assets/img/logo_simple.png" alt="Equilibria DBT" style="height: 60px; width: auto;">
+            </a>
+            <button class="sticky-nav-cta open-modal">Agendar videollamada</button>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
         <div class="container">
             <div class="hero-content">
                 <span class="hero-label fade-in-up delay-1">Un espacio para ti</span>
@@ -28,10 +38,10 @@
                     Construye la vida que valga la pena ser <span class="accent">vivida</span>
                 </h1>
                 <p class="hero-text fade-in-up delay-3">
-                    Si tus emociones te desbordan o las relaciones son difíciles, aquí encontrarás estructura, herramientas reales y acompañamiento profesional.
+                    Si tus emociones te desbordan o las relaciones son difíciles, aquí encontrarás estructura, herramientas reales y un camino claro hacia el equilibrio que estás buscando.
                 </p>
                 <button class="hero-cta fade-in-up delay-4 open-modal">
-                    Agenda llamada
+                    Agendar videollamada
                 </button>
             </div>
         </div>
@@ -55,26 +65,26 @@
                 </svg>
             </button>
             <div class="form-card">
-                <h2 class="form-title">Da el primer paso</h2>
-                <p class="form-subtitle">Conecta con nosotros en una breve videollamada</p>
+                <h2 class="form-title">Escríbenos por WhatsApp</h2>
+                <p class="form-subtitle">Nos pondremos en contacto contigo para agendar una videollamada sin costo y resolver todas tus dudas</p>
                 <form id="contactForm">
                     <div class="form-group">
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text" id="nombre" class="form-input" placeholder="¿Cómo te llamas?" required>
                     </div>
                     <div class="form-group">
-                        <label for="dificultad" class="form-label">¿Con qué te identificas?</label>
-                        <select id="dificultad" class="form-select" required>
+                        <label for="dificultad" class="form-label">¿Con qué te identificas? (opcional)</label>
+                        <select id="dificultad" class="form-select">
                             <option value="">Selecciona una opción</option>
                             <option value="emociones">Emociones intensas</option>
                             <option value="relaciones">Dificultades en relaciones</option>
-                            <option value="impulsividad">Impulsividad</option>
+                            <option value="impulsividad">Reacciones impulsivas</option>
                             <option value="ansiedad">Ansiedad constante</option>
                             <option value="frustracion">Baja tolerancia a la frustración</option>
                             <option value="otro">Otra situación</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn-primary">Hablar por WhatsApp</button>
+                    <button type="submit" class="btn-primary">Enviar mensaje</button>
                 </form>
             </div>
         </div>
@@ -84,13 +94,13 @@
     <section class="section-centered">
         <div class="container">
             <div class="content-box">
-                <div class="section-label">ENTRENAMIENTO</div>
+                <div class="section-label">ENTRENAMIENTO</div><br>
                 <h2 class="section-title">¿Qué es DBT?</h2>
                 <p class="lead-text">La terapia dialéctica conductual (DBT)</p>
                 <p class="body-text">DBT (Dialectical Behavior Therapy) es un tratamiento basado en evidencia, desarrollado por la Dra. Marsha Linehan, que combina estrategias de aceptación y cambio. Su objetivo es ayudar a regular emociones, manejar conductas difíciles, mejorar relaciones y vivir con mayor presencia.</p>
                 <p class="body-text">A través del entrenamiento en más de 30 habilidades, la DBT enseña herramientas prácticas para atravesar el malestar sin empeorarlo y actuar de forma más efectiva en la vida diaria.</p>
                 <p class="body-text">Aunque fue creada para personas con desregulación emocional significativa, hoy se utiliza ampliamente para mejorar el manejo emocional y la calidad de vida en general.</p>
-                <p class="body-text">En DBT no solo se habla: se aprenden y practican habilidades para construir una vida que valga la pena ser vivida.</p>
+                <p class="body-text"><strong>En DBT no solo se habla: se aprenden y practican habilidades para construir una vida que valga la pena ser vivida.</strong></p>
             </div>
         </div>
     </section>
@@ -133,13 +143,45 @@
         </div>
     </section>
 
-    <!-- PROGRAMA DBT -->
-    <section class="section-centered">
+    <!-- HOPE BREAK -->
+    <section class="section-hope">
         <div class="container">
-            <div class="content-box">
-                <div class="section-label">PROGRAMA</div>
+            <div class="hope-box">
+                <p class="hope-text">Hay una forma de aprender a responder de manera diferente. No es mágico ni instantáneo, pero funciona.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMA DBT -->
+    <section class="section-program">
+        <div class="container">
+            <div class="program-header">
+                <div class="section-label">PROGRAMA</div><br>
                 <h2 class="section-title">El programa DBT</h2>
-                <p class="body-text">El programa DBT incluye: terapia individual, coaching telefónico, grupo de consultoría entre terapeutas y <strong>grupo de habilidades</strong>, que es este espacio estructurado y seguro donde las personas aprenden, practican y fortalecen herramientas concretas para regular sus emociones, manejar conductas difíciles, mejorar sus relaciones y avanzar hacia una vida con mayor sentido y bienestar.</p>
+                <p class="program-intro">El programa DBT incluye:</p>
+            </div>
+
+            <div class="program-components">
+                <div class="program-component">
+                    <div class="component-accent"></div>
+                    <h3 class="component-title">Terapia individual</h3>
+                </div>
+
+                <div class="program-component">
+                    <div class="component-accent"></div>
+                    <h3 class="component-title">Coaching telefónico</h3>
+                </div>
+
+                <div class="program-component">
+                    <div class="component-accent"></div>
+                    <h3 class="component-title">Grupo de consultoría entre terapeutas</h3>
+                </div>
+
+                <div class="program-component program-component-featured">
+                    <div class="component-accent"></div>
+                    <h3 class="component-title">Grupo de habilidades</h3>
+                    <p class="component-desc">Este espacio estructurado y seguro donde las personas aprenden, practican y fortalecen herramientas concretas para regular sus emociones, manejar conductas difíciles, mejorar sus relaciones y avanzar hacia una vida con mayor sentido y bienestar</p>
+                </div>
             </div>
         </div>
     </section>
@@ -153,7 +195,7 @@
                 <p class="body-text">Puedes integrarte al inicio de cada bloque de Mindfulness. El entrenamiento es continuo.</p>
 
                 <div class="cycle-list">
-                    <div class="cycle-list-item" data-number="25">
+                    <div class="cycle-list-item" data-number="27">
                         <strong>Semanas</strong>
                         <p>De entrenamiento continuo</p>
                     </div>
@@ -170,11 +212,120 @@
         </div>
     </section>
 
+    <!-- ESTRUCTURA DEL PROGRAMA -->
+    <section class="section-program-structure">
+        <div class="container">
+            <div class="program-structure-header">
+                <h3 class="structure-title">Estructura del programa</h3>
+                <p class="structure-subtitle">27 semanas organizadas en ciclos progresivos de mindfulness y desarrollo de habilidades</p>
+            </div>
+
+            <div class="program-phases">
+                <div class="phase-item">
+                    <div class="phase-marker mindfulness"></div>
+                    <div class="phase-content">
+                        <div class="phase-header">
+                            <h4 class="phase-title">Mindfulness</h4>
+                            <span class="phase-duration">2 semanas</span>
+                        </div>
+                        <p class="phase-desc">Introducción y fundamentos</p>
+                    </div>
+                </div>
+
+                <div class="phase-connector"></div>
+
+                <div class="phase-item">
+                    <div class="phase-marker interpersonal"></div>
+                    <div class="phase-content">
+                        <div class="phase-header">
+                            <h4 class="phase-title">Efectividad Interpersonal</h4>
+                            <span class="phase-duration">7 semanas</span>
+                        </div>
+                        <p class="phase-desc">Comunicación y relaciones</p>
+                    </div>
+                </div>
+
+                <div class="phase-connector"></div>
+
+                <div class="phase-item">
+                    <div class="phase-marker mindfulness"></div>
+                    <div class="phase-content">
+                        <div class="phase-header">
+                            <h4 class="phase-title">Mindfulness</h4>
+                            <span class="phase-duration">2 semanas</span>
+                        </div>
+                        <p class="phase-desc">Integración y práctica</p>
+                    </div>
+                </div>
+
+                <div class="phase-connector"></div>
+
+                <div class="phase-item">
+                    <div class="phase-marker emotional"></div>
+                    <div class="phase-content">
+                        <div class="phase-header">
+                            <h4 class="phase-title">Regulación Emocional</h4>
+                            <span class="phase-duration">6 semanas</span>
+                        </div>
+                        <p class="phase-desc">Manejo de emociones intensas</p>
+                    </div>
+                </div>
+
+                <div class="phase-connector"></div>
+
+                <div class="phase-item">
+                    <div class="phase-marker mindfulness"></div>
+                    <div class="phase-content">
+                        <div class="phase-header">
+                            <h4 class="phase-title">Mindfulness</h4>
+                            <span class="phase-duration">2 semanas</span>
+                        </div>
+                        <p class="phase-desc">Consolidación</p>
+                    </div>
+                </div>
+
+                <div class="phase-connector"></div>
+
+                <div class="phase-item">
+                    <div class="phase-marker distress"></div>
+                    <div class="phase-content">
+                        <div class="phase-header">
+                            <h4 class="phase-title">Tolerancia al Malestar</h4>
+                            <span class="phase-duration">6 semanas</span>
+                        </div>
+                        <p class="phase-desc">Gestión de crisis</p>
+                    </div>
+                </div>
+
+                <div class="phase-connector"></div>
+
+                <div class="phase-item final">
+                    <div class="phase-marker mindfulness"></div>
+                    <div class="phase-content">
+                        <div class="phase-header">
+                            <h4 class="phase-title">Mindfulness</h4>
+                            <span class="phase-duration">2 semanas</span>
+                        </div>
+                        <p class="phase-desc">Cierre e integración</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-note">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 16v-4M12 8h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <p>Puedes integrarte al inicio de cualquier fase de Mindfulness</p>
+            </div>
+        </div>
+    </section>
+
     <!-- MÓDULOS - Grid horizontal -->
     <section class="section-modules">
         <div class="container">
             <div class="modules-header">
-                <div class="section-label">HABILIDADES</div>
+                <div class="section-label">HABILIDADES</div><br>
                 <h2 class="section-title">Los 4 módulos</h2>
             </div>
 
@@ -242,56 +393,72 @@
     <section class="section-team">
         <div class="container">
             <div class="team-header">
-                <div class="section-label">EQUIPO</div>
+                <div class="section-label">EQUIPO</div><br>
                 <h2 class="section-title">Quiénes te acompañan</h2>
             </div>
 
             <div class="team-grid">
                 <div class="team-member">
                     <div class="team-avatar">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <img src="assets/img/Maria Jose Saucedo.jpg" alt="Mtra. María José Saucedo" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-16);">
                     </div>
-                    <div>
+                    <div class="team-info">
                         <h3 class="team-name">Mtra. María José Saucedo</h3>
                         <p class="team-quote">"Estructura, empatía y efectividad para el cambio."</p>
-                        <p class="team-bio">Psicoterapeuta con formación en Entrenamiento Intensivo en Terapia Dialéctico-Conductual (DBT) por DBT Iberoamérica y maestra en Terapia Cognitivo-Conductual por el Centro de Psicoterapia Cognitivo-Conductual. Cuenta con un diplomado en Terapia de Esquemas por el Centro de Psicoterapia y un diplomado en Diagnóstico Neuropsicológico por el Instituto INCRI A.C.</p>
-                        <p class="team-bio">Tiene especial interés en el enfoque biopsicosocial, integrándolo para comprender a profundidad la interacción entre factores emocionales, cognitivos y contextuales en cada consultante.</p>
-                        <p class="team-bio">Está especializada en consultantes con desregulación emocional, dificultades interpersonales, depresión y ansiedad, entre otras problemáticas.</p>
-                        <p class="team-bio">Se desempeña como terapeuta individual, coordinadora administrativa del programa y entrenadora del grupo de habilidades. Su enfoque integra claridad, habilidades prácticas y calidez para acompañar procesos de cambio sostenido y favorecer una vida más estable y significativa.</p>
+                        <p class="team-role">Coordinadora del programa · Entrenadora de habilidades</p>
+                        <button class="team-expand-btn">
+                            <span>Ver trayectoria</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="team-bio-collapse">
+                            <p class="team-bio">Psicoterapeuta con formación en Entrenamiento Intensivo en la terapia dialéctica conductual (DBT) por DBT Iberoamérica y maestra en Terapia Cognitivo-Conductual por el Centro de Psicoterapia Cognitivo-Conductual. Cuenta con un diplomado en Terapia de Esquemas por el Centro de Psicoterapia y un diplomado en Diagnóstico Neuropsicológico por el Instituto INCRI A.C.</p>
+                            <p class="team-bio">Tiene especial interés en el enfoque biopsicosocial, integrándolo para comprender a profundidad la interacción entre factores emocionales, cognitivos y contextuales en cada consultante.</p>
+                            <p class="team-bio">Está especializada en personas con desregulación emocional, dificultades interpersonales, depresión y ansiedad, entre otras problemáticas.</p>
+                            <p class="team-bio">Se desempeña como terapeuta individual, coordinadora administrativa del programa y entrenadora del grupo de habilidades. Su enfoque integra claridad, habilidades prácticas y calidez para acompañar procesos de cambio sostenido y favorecer una vida más estable y significativa.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="team-member">
                     <div class="team-avatar">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <img src="assets/img/Cinthya Trujillo.jpeg" alt="Mtra. Cinthya Trujillo" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-16);">
                     </div>
-                    <div>
+                    <div class="team-info">
                         <h3 class="team-name">Mtra. Cinthya Trujillo</h3>
                         <p class="team-quote">"Equilibrio entre aceptación y cambio para construir bienestar."</p>
-                        <p class="team-bio">Psicoterapeuta con formación en Terapia Dialéctico-Conductual (DBT) por DBT Iberoamérica y maestra en Psicoterapia Cognitivo-Conductual por el Centro de Psicoterapia Cognitivo-Conductual. Cuenta con un diplomado en Terapias Conductuales Contextuales por Centro Dialéctica. Se desempeña como terapeuta individual y entrenadora de grupos de habilidades, con especialización en trastornos emocionales, ansiedad y dificultades en las relaciones.</p>
-                        <p class="team-bio">Su enfoque combina validación y estrategias de cambio, por medio del entrenamiento de habilidades prácticas para acompañar procesos de cambio sostenido y buscando construir una vida valiosa y con sentido.</p>
+                        <p class="team-role">Terapeuta individual · Entrenadora de habilidades</p>
+                        <button class="team-expand-btn">
+                            <span>Ver trayectoria</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="team-bio-collapse">
+                            <p class="team-bio">Psicoterapeuta con formación en la terapia dialéctica conductual (DBT) por DBT Iberoamérica y maestra en Psicoterapia Cognitivo-Conductual por el Centro de Psicoterapia Cognitivo-Conductual. Cuenta con un diplomado en Terapias Conductuales Contextuales por Centro Dialéctica. Se desempeña como terapeuta individual y entrenadora de grupos de habilidades, con especialización en trastornos emocionales, ansiedad y dificultades en las relaciones.</p>
+                            <p class="team-bio">Su enfoque combina validación y estrategias de cambio, por medio del entrenamiento de habilidades prácticas para acompañar procesos de cambio sostenido y buscando construir una vida valiosa y con sentido.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="team-member">
                     <div class="team-avatar">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <img src="assets/img/César Aceves.jpg" alt="Psic. César Aceves" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-16);">
                     </div>
-                    <div>
+                    <div class="team-info">
                         <h3 class="team-name">Psic. César Aceves</h3>
                         <p class="team-quote">"Claridad y análisis para avanzar."</p>
-                        <p class="team-bio">Psicoterapeuta DBT, Co-coordinador Grupo habilidades, Coordinador académico.</p>
-                        <p class="team-bio">Psicoterapeuta con formación especializante en DBT por Contexto, formación en terapias contextuales por IJPCC, Intervenciones basadas en análisis funcionales de la conducta por ITEMA e ITECOC experiencia en depresión, ansiedad y conductas de riesgo. Se desempeña como terapeuta individual y entrenador de grupos de habilidades.</p>
-                        <p class="team-bio">Disfruta entrenar habilidades y guiar análisis de resolución de problemas, brindando herramientas concretas y efectivas. Su enfoque combina presencia cercana, profesionalismo y práctica fundamentada para apoyar el desarrollo de habilidades en consultantes y grupos.</p>
+                        <p class="team-role">Co-coordinador · Coordinador académico</p>
+                        <button class="team-expand-btn">
+                            <span>Ver trayectoria</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="team-bio-collapse">
+                            <p class="team-bio">Psicoterapeuta con formación en terapias contextuales por IJPCC, formación especializante en DBT por Contexto e intervenciones basadas en análisis funcionales de la conducta por ITEMA e ITECOC. Se desempeña como terapeuta individual, entrenador de grupos de habilidades y co-coordinador del programa. Su enfoque combina presencia cercana, profesionalismo y práctica fundamentada en el análisis conductual para acompañar procesos de cambio y el desarrollo de habilidades en consultantes y grupos.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -302,20 +469,29 @@
     <section class="section-faq">
         <div class="container">
             <div class="faq-header">
-                <div class="section-label">PREGUNTAS FRECUENTES</div>
+                <div class="section-label">PREGUNTAS FRECUENTES</div><br>
                 <h2 class="section-title">Todo lo que necesitas saber</h2>
             </div>
 
             <div class="faq-list">
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>¿Cómo puede ayudarme DBT y el entrenamiento en habilidades?</span>
+                        <span>¿Cómo puede ayudarme la DBT y el entrenamiento en habilidades?</span>
                         <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Si sientes que tus emociones te desbordan, que reaccionas impulsivamente o que te cuesta mantener vínculos sanos, DBT puede ayudarte a recuperar claridad, calma y dirección. Es un entrenamiento práctico que se aprende en sesión y se vive en la vida real, combinando validación, habilidades concretas y práctica continua para que puedas responder de forma más consciente y construir una vida que se sienta más estable y significativa.</p>
+                        <p>La DBT ofrece herramientas concretas para que puedas regular tus emociones, mejorar tus relaciones, responder de forma más consciente y efectiva ante situaciones difíciles, y avanzar hacia la vida que quieres construir.</p>
+                        <p>El entrenamiento en habilidades te ayuda específicamente a:</p>
+                        <ul>
+                            <li>Aprender a estar presente con lo que sientes, sin dejarte arrastrar por ello.</li>
+                            <li>Reducir conductas impulsivas que te alejan de tus valores.</li>
+                            <li>Tolerar el malestar sin empeorar las cosas.</li>
+                            <li>Comunicarte con claridad, poner límites y fortalecer tus relaciones.</li>
+                            <li>Tomar decisiones más conscientes, alineadas con la dirección que quieres darle a tu vida.</li>
+                        </ul>
+                        <p>Estas habilidades se aprenden y se practican de forma gradual, en un espacio estructurado y con el apoyo de un grupo que comparte objetivos similares.</p>
                     </div>
                 </div>
 
@@ -327,17 +503,18 @@
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>El programa completo dura aproximadamente 25 semanas (5-6 meses) de entrenamiento continuo. Está organizado en ciclos que combinan módulos y prácticas de Mindfulness:</p>
+                        <p>El ciclo completo del entrenamiento en habilidades dura 27 semanas y está diseñado para que las habilidades se integren de forma progresiva y estable.</p>
+                        <p>El programa incluye los cuatro módulos de la DBT, cada uno con su duración específica, intercalados con bloques de Mindfulness que permiten reforzar lo aprendido antes de avanzar al siguiente módulo:</p>
                         <ul>
-                            <li>2 semanas de Mindfulness</li>
-                            <li>7 semanas de Efectividad Interpersonal</li>
-                            <li>2 semanas de Mindfulness</li>
-                            <li>6 semanas de Regulación Emocional</li>
-                            <li>2 semanas de Mindfulness</li>
-                            <li>6 semanas de Tolerancia al Malestar</li>
-                            <li>2 semanas de Mindfulness</li>
+                            <li><strong>2 semanas de Mindfulness</strong> — introducción y bases de atención plena.</li>
+                            <li><strong>7 semanas de Efectividad Interpersonal</strong> — habilidades para mejorar relaciones y comunicarte con efectividad.</li>
+                            <li><strong>2 semanas de Mindfulness</strong> — práctica y refuerzo.</li>
+                            <li><strong>6 semanas de Regulación Emocional</strong> — herramientas para comprender y manejar tus emociones.</li>
+                            <li><strong>2 semanas de Mindfulness</strong> — práctica y refuerzo.</li>
+                            <li><strong>6 semanas de Tolerancia al Malestar</strong> — estrategias para atravesar momentos difíciles sin empeorar las cosas.</li>
+                            <li><strong>2 semanas de Mindfulness</strong> — cierre, integración y práctica final.</li>
                         </ul>
-                        <p>Este formato permite que las habilidades se integren de manera progresiva, con pausas de atención plena entre cada módulo para reforzar lo aprendido y mantener claridad antes de avanzar al siguiente.</p>
+                        <p>Esta estructura permite que cada módulo se consolide con claridad antes de avanzar al siguiente, y que tengas tiempo para practicar y notar los cambios de forma gradual.</p>
                     </div>
                 </div>
 
@@ -361,16 +538,16 @@
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Este entrenamiento está dirigido a personas que están en terapia individual activa y desean fortalecer su tratamiento aprendiendo habilidades DBT.</p>
+                        <p>Este entrenamiento está dirigido a personas que están en terapia individual activa y quieren fortalecer su tratamiento con herramientas concretas de la DBT.</p>
                         <p>Es ideal para quienes buscan:</p>
                         <ul>
-                            <li>Aumentar su capacidad de regular emociones intensas.</li>
-                            <li>Mejorar su efectividad interpersonal y resolver conflictos con mayor claridad.</li>
-                            <li>Reducir conductas impulsivas o pautas que generan malestar.</li>
-                            <li>Aprender y practicar habilidades concretas para responder de forma más consciente y estable ante situaciones difíciles.</li>
-                            <li>Avanzar hacia una vida que valga más la pena ser vivida a partir de acciones efectivas.</li>
+                            <li>Regular emociones intensas con mayor claridad y estabilidad.</li>
+                            <li>Reducir conductas impulsivas o patrones que generan malestar.</li>
+                            <li>Mejorar su forma de comunicarse, poner límites y resolver conflictos.</li>
+                            <li>Aumentar su capacidad para tolerar situaciones difíciles sin empeorar las cosas.</li>
+                            <li>Tomar decisiones más conscientes y avanzar hacia una vida más alineada con sus valores.</li>
                         </ul>
-                        <p>De cualquier manera, siempre realizamos una videollamada de valoración para revisar si el grupo es el formato adecuado para ti y si este es el mejor momento para integrarte según tus necesidades clínicas y tus objetivos terapéuticos.</p>
+                        <p>Antes de integrarte al grupo, siempre realizamos una videollamada de valoración. Ahí revisamos juntos si el formato es adecuado para ti, si este es el mejor momento para empezar, y resolvemos cualquier duda que tengas sobre el entrenamiento.</p>
                     </div>
                 </div>
 
@@ -382,8 +559,8 @@
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>No necesariamente. Aunque DBT fue creado originalmente para personas con Trastorno Límite de la Personalidad, hoy en día se utiliza con una amplia variedad de personas que desean mejorar su manejo emocional, fortalecer sus relaciones y aumentar su bienestar, incluso sin contar con un diagnóstico clínico formal.</p>
-                        <p>Lo más importante es tu interés en aprender habilidades y tu disposición a practicar lo que vas aprendiendo semana a semana.</p>
+                        <p>No es necesario. Aunque la DBT fue diseñada originalmente para tratar el Trastorno Límite de la Personalidad, hoy en día se utiliza con una amplia variedad de personas que buscan mejorar su regulación emocional, fortalecer sus relaciones y aumentar su bienestar, independientemente de si cuentan o no con un diagnóstico clínico formal.</p>
+                        <p>Lo más importante es que estés en terapia individual activa, que tengas interés real en aprender habilidades y que estés dispuesto o dispuesta a practicar lo que vas aprendiendo cada semana.</p>
                     </div>
                 </div>
 
@@ -395,14 +572,14 @@
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Las sesiones son grupales y de entrenamiento en habilidades, siguiendo una estructura clara y consistente:</p>
+                        <p>Las sesiones son grupales, de entrenamiento en habilidades, y siguen una estructura clara y consistente cada semana:</p>
                         <ul>
-                            <li><strong>10 minutos</strong> de práctica de Mindfulness, para llevar la mente al momento presente y preparar el espacio de aprendizaje.</li>
-                            <li><strong>40 minutos</strong> de revisión de tarea, donde se refuerza la práctica de habilidades de la semana anterior y se identifican estrategias efectivas.</li>
-                            <li><strong>10 minutos</strong> de break, para descansar y reestablecer la atención antes del siguiente bloque.</li>
-                            <li><strong>1 hora</strong> de introducción y el desarrollo de la nueva habilidad, con ejemplos y práctica breve, además de una tarea concreta para aplicarla durante la semana.</li>
+                            <li><strong>10 minutos</strong> de práctica de Mindfulness — para llevar la mente al presente y preparar el espacio de aprendizaje.</li>
+                            <li><strong>40 minutos</strong> de revisión de tarea — donde se refuerza la práctica de la semana anterior y se identifican estrategias efectivas.</li>
+                            <li><strong>10 minutos</strong> de descanso — para reestablecer la atención antes del siguiente bloque.</li>
+                            <li><strong>1 hora</strong> de introducción y desarrollo de la nueva habilidad — con ejemplos, práctica breve y una tarea concreta para aplicarla durante la semana.</li>
                         </ul>
-                        <p>El enfoque está en aprender, practicar y fortalecer habilidades, más que en procesar experiencias personales dentro del grupo. Cada sesión ofrece herramientas concretas para aumentar tu efectividad y apoyar cambios en tu vida diaria.</p>
+                        <p>El enfoque está en aprender y practicar habilidades concretas, más que en procesar experiencias personales dentro del grupo. Cada sesión te da herramientas específicas para aumentar tu efectividad y apoyar cambios reales en tu vida diaria.</p>
                     </div>
                 </div>
             </div>
@@ -413,8 +590,9 @@
         <div class="container">
             <div class="cta-final">
                 <h2 class="cta-final-title">Tu primera llamada</h2>
-                <p class="cta-final-text">Un espacio para conocernos, aclarar todas tus dudas y explorar juntos si este entrenamiento es adecuado para ti y tus objetivos terapéuticos. Sin presión, sin compromisos.</p>
-                <button class="btn-secondary open-modal">Agenda tu videollamada</button>
+                <p class="cta-final-text">Antes de integrarte al grupo, agendamos una videollamada sin costo para conocernos, resolver todas tus dudas y revisar juntos si el entrenamiento en habilidades es adecuado para ti en este momento.</p>
+                <p class="cta-final-text">Escríbenos por WhatsApp y coordinamos un espacio para platicar.</p>
+                <button class="btn-secondary open-modal">Enviar mensaje por WhatsApp</button>
             </div>
         </div>
     </section>
@@ -425,21 +603,6 @@
             <p><a href="tel:+523311960715" class="footer-link">33 1196 0715</a></p>
         </div>
     </footer>
-
-    <!-- Sticky Nav -->
-    <nav class="sticky-nav" id="stickyNav">
-        <div class="sticky-nav-content">
-            <div class="sticky-nav-logo-wrapper">
-                <div class="sticky-nav-accent"></div>
-                <div>
-                    <div class="sticky-nav-logo">EQUILIBRIA</div>
-                    <div class="sticky-nav-subtitle">Grupo de Habilidades D.B.T.</div>
-                </div>
-                <div class="sticky-nav-accent"></div>
-            </div>
-            <button class="sticky-nav-cta open-modal">Contáctanos</button>
-        </div>
-    </nav>
 
     <!-- FAB WhatsApp -->
     <a href="https://wa.me/523311960715?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20el%20Grupo%20de%20Habilidades%20DBT." class="fab-whatsapp" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">

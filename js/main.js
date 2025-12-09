@@ -84,3 +84,11 @@ document.querySelectorAll('.faq-question').forEach(button => {
         }
     });
 });
+
+// Team Member Expand/Collapse
+document.querySelectorAll('.team-expand-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const teamMember = button.closest('.team-member');
+        teamMember.classList.toggle('expanded');
+    });
+});
