@@ -1049,7 +1049,7 @@ html {
 .why-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--space-48);
+    gap: 0;
     align-items: start;
     max-width: 900px;
     margin: 0 auto;
@@ -2050,8 +2050,8 @@ html {
 }
 
 .team-avatar {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: var(--radius-16);
     display: flex;
     align-items: center;
@@ -2060,6 +2060,7 @@ html {
     overflow: hidden;
     flex-shrink: 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: var(--neutral-100);
 }
 
 @media (max-width: 767px) {
@@ -2069,7 +2070,13 @@ html {
 }
 
 .team-avatar img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
     transition: transform var(--transition-slow);
+    image-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .team-member:hover .team-avatar img {
@@ -2564,7 +2571,13 @@ a,
 
     .why-intro {
         position: static;
-        margin-bottom: var(--space-24);
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .why-intro .section-label {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .why-intro h2 {
