@@ -1,7 +1,17 @@
 {
   "permissions": {
     "allow": [
-      "Bash(dir /b \"c:\\Users\\Usuario\\Documents\\Pagina Marijo\\pagina\")"
+      "Bash(dir /b \"c:\\Users\\Usuario\\Documents\\Pagina Marijo\\pagina\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(git stash pop:*)",
+      "Bash(git rm:*)",
+      "Bash(nslookup:*)",
+      "Bash(ipconfig /flushdns)",
+      "Bash(ipconfig:*)"
     ],
     "deny": [],
     "ask": []
